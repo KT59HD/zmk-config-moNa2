@@ -93,7 +93,9 @@
 &kp ESCAPE                  &kp KP_NUMBER_0  &kp PERIOD       &kp DELETE       &kp ENTER  &kp BACKSPACE    &trans  &trans                                                                           &kp PIPE
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            sensor-bindings =
+                <&inc_dec_kp C_AC_ZOOM_IN C_AC_ZOOM_OUT>,
+                <&inc_dec_kp C_AC_ZOOM_IN C_AC_ZOOM_OUT>;
         };
 
         layer_3 {
