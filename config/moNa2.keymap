@@ -73,7 +73,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp PAGE_DOWN PAGE_UP>,
-                <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+                <&inc_dec_kp PAGE_DOWN PAGE_UP>;
         };
 
         layer_1 {
@@ -84,7 +84,9 @@
 &kp INT_YEN  &kp LCTRL        &kp HASH       &trans             &trans                &trans                   &trans  &trans                                            &kp F12
             >;
 
-            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>,
+                <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         layer_2 {
@@ -96,8 +98,8 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>,
-                <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
+                <&inc_dec_kp PAGE_DOWN PAGE_UP>,
+                <&inc_dec_kp PAGE_DOWN PAGE_UP>;
         };
 
         layer_3 {
