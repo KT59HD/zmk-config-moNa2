@@ -71,16 +71,14 @@
 &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 LEFT_SHIFT  &lt 1 SPACE  &lt_to_layer_0 3 INT_KANA    &kp BACKSPACE               &lt 2 ENTER                             &kp RIGHT_SHIFT
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp PAGE_DOWN PAGE_UP>,
-                <&inc_dec_kp PAGE_DOWN PAGE_DOWN>;
+            sensor-bindings = <&scroll_up_down>, <&scroll_up_down>;
         };
 
         layer_1 {
             bindings = <
 &kp F1       &kp F2           &kp F3         &kp F4             &kp F4                                                 &kp F6       &kp F7      &kp F8         &kp F9    &kp F10
 &kp F5       &kp EXCLAMATION  &kp AMPERSAND  &kp PIPE           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &trans  &kp UNDER    &mkp MB1    &kp PAGE_UP    &mkp MB2  &kp F10
-&kp TILDE    &kp GRAVE        &kp SQT        &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE          &trans  &kp AT_SIGN  &kp DOLLAR  &kp PAGE_DOWN  &mkp MB3  &kp F11
+&kp TILDE    &kp GRAVE        &kp SQT        &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE          &kp A   &kp AT_SIGN  &kp DOLLAR  &kp PAGE_DOWN  &mkp MB3  &kp F11
 &kp INT_YEN  &kp LCTRL        &kp HASH       &trans             &trans                &trans                   &trans  &trans                                            &kp F12
             >;
 
@@ -144,21 +142,27 @@
             >;
         };
 
-// #includeのあとのあたりにスクロール量を変更
-#define ZMK_MOUSE_DEFAULT_SCRL_VAL 100
+        // #includeのあとのあたりにスクロール量を変更
 
-//  behaviors に追加
-// 新しいスクロール動作の追加
+        #define ZMK_MOUSE_DEFAULT_SCRL_VAL 100
+
+        //  behaviors に追加
+        // 新しいスクロール動作の追加
+
         scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+            bindings = <
+&msc SCRL_UP  &msc SCRL_DOWN
+            >;
+
             // 追加: スクロールのタップ時間を設定 (20ms)
+
             tap-ms = <20>;
         };
 
-// 設定したいレイヤー
-sensor-bindings = <&scroll_up_down>;
+        // 設定したいレイヤー
 
+        sensor-bindings = <&scroll_up_down>;
     };
 };
