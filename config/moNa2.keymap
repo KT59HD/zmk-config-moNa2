@@ -140,6 +140,8 @@
 &trans  &trans  &trans    &trans    &trans  &mkp MB2    &bootloader  &trans  &trans    &trans    &trans    &trans
 &trans  &trans  &trans    &trans    &trans  &trans      &trans       &trans                                &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp 0 0>, <&inc_dec_kp 0 0>;
         };
 
         // #includeのあとのあたりにスクロール量を変更
