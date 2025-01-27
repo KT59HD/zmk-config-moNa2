@@ -54,9 +54,7 @@
 &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 6 INT_HENKAN  &lt 1 SPACE  &lt 3 INT_MUHENKAN    &kp BACKSPACE  &lt 2 ENTER                             &kp RIGHT_SHIFT
             >;
 
-            sensor-bindings =
-                <&scroll_up_down>,
-                <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+            sensor-bindings = <&scroll_up_down>, <&scroll_up_down>;
         };
 
         layer_1 {
@@ -67,7 +65,9 @@
 &kp INTERNATIONAL_3  &trans            &kp HASH          &trans             &trans                &trans                   &trans    &trans                                          &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOLUME_UP K_VOLUME_DOWN>,
+                <&inc_dec_kp K_VOLUME_UP K_VOLUME_DOWN>;
         };
 
         layer_2 {
@@ -78,7 +78,9 @@
 &trans          &kp KP_NUMBER_0  &kp PERIOD       &trans           &trans        &trans                     &trans          &trans                                                                  &kp PIPE
             >;
 
-            sensor-bindings = <&scroll_up_down>, <&inc_dec_kp 0 0>;
+            sensor-bindings =
+                <&inc_dec_kp K_VOLUME_UP K_VOLUME_DOWN>,
+                <&inc_dec_kp K_VOLUME_UP K_VOLUME_DOWN>;
         };
 
         layer_3 {
