@@ -50,7 +50,7 @@
             bindings = <
 &kp Q      &kp W         &kp E         &kp R             &kp T                                             &kp Y        &kp U  &lt 5 I    &kp O    &kp P
 &kp A      &kp S         &kp D         &kp F             &kp G        &trans                &lt 5 APOS     &kp H        &kp J  &kp K      &kp L    &kp SQT
-&kp Z      &kp X         &kp C         &kp V             &kp B        &lt 4 COLON           &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp QUESTION
+&kp Z      &kp X         &kp C         &kp V             &kp B        &mkp MB1              &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp QUESTION
 &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 6 INT_HENKAN  &lt 1 SPACE  &lt 3 INT_MUHENKAN    &kp BACKSPACE  &lt 2 ENTER                             &kp RIGHT_SHIFT
             >;
 
@@ -59,10 +59,10 @@
 
         layer_1 {
             bindings = <
-&kp F1               &kp F2            &kp F3            &kp F4             &kp F5                                                   &kp F6     &kp F7      &kp F8         &kp F9    &kp F5
-&trans               &kp EXCL          &kp AMPERSAND     &kp PIPE           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp PLUS  &kp UNDER  &mkp MB1    &kp PAGE_UP    &mkp MB2  &trans
-&kp TILDE            &kp SINGLE_QUOTE  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE          &trans    &kp AT     &kp DOLLAR  &kp PAGE_DOWN  &mkp MB3  &trans
-&kp INTERNATIONAL_3  &trans            &kp HASH          &trans             &trans                &trans                   &trans    &trans                                          &trans
+&kp F1               &kp F2            &kp F3            &kp F4             &kp F5                                       &kp F6     &kp F7      &kp F8         &kp F9    &kp F5
+&trans               &kp EXCL          &kp AMPERSAND     &kp PIPE           &trans          &trans             &kp PLUS  &kp UNDER  &mkp MB1    &kp PAGE_UP    &mkp MB2  &kp LEFT_PARENTHESIS
+&kp TILDE            &kp SINGLE_QUOTE  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp LEFT_BRACE  &kp RIGHT_BRACE    &trans    &kp AT     &kp DOLLAR  &kp PAGE_DOWN  &mkp MB3  &kp RIGHT_PARENTHESIS
+&kp INTERNATIONAL_3  &trans            &kp HASH          &trans             &trans          &trans             &trans    &trans                                          &trans
             >;
 
             sensor-bindings =
