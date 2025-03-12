@@ -61,7 +61,7 @@
 &kp F1               &kp F2            &kp F3            &kp F4             &kp F5                                                    &kp F6     &kp F7      &kp F8         &kp F9    &kp HASH
 &trans               &kp EXCL          &kp AMPERSAND     &kp PIPE           &kp PLUS        &trans             &kp LEFT_PARENTHESIS   &kp UNDER  &mkp MB1    &kp PAGE_UP    &mkp MB2  &kp LEFT_PARENTHESIS
 &kp TILDE            &kp SINGLE_QUOTE  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp LEFT_BRACE  &kp RIGHT_BRACE    &kp RIGHT_PARENTHESIS  &kp AT     &kp DOLLAR  &kp PAGE_DOWN  &mkp MB3  &kp RIGHT_PARENTHESIS
-&kp INTERNATIONAL_3  &trans            &kp HASH          &trans             &trans          &trans             &trans                 &trans                                          &kp GLOBE
+&kp INTERNATIONAL_3  &trans            &trans            &trans             &trans          &trans             &trans                 &trans                                          &kp GLOBE
             >;
 
             sensor-bindings =
