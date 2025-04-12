@@ -73,7 +73,7 @@
             bindings = <
 &kp KP_NUMBER_1   &kp KP_NUMBER_2   &kp KP_NUMBER_3    &kp KP_NUMBER_4       &kp KP_NUMBER_5                                                   &kp KP_NUMBER_6    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0
 &kp LEFT_COMMAND  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LC(LA(KP_NUMBER_0))    &kp UNDERSCORE  &kp RIGHT_BRACKET  &mkp MB1         &kp UP           &mkp MB2         &kp MINUS
-&kp LEFT_SHIFT    &kp KP_NUMBER_1   &kp KP_NUMBER_2    &kp KP_NUMBER_3       &kp PERIOD             &kp EQUAL                  &trans          &kp LEFT_BRACKET   &kp LEFT_ARROW   &kp DOWN_ARROW   &kp RIGHT_ARROW  &kp UNDERSCORE
+&kp LEFT_SHIFT    &kp KP_NUMBER_1   &kp KP_NUMBER_2    &kp KP_NUMBER_3       &kp PERIOD             &kp EQUAL                  &kp BACKSLASH   &kp LEFT_BRACKET   &kp LEFT_ARROW   &kp DOWN_ARROW   &kp RIGHT_ARROW  &kp UNDERSCORE
 &kp TAB           &kp KP_NUMBER_0   &kp PERIOD         &trans                &trans                 &trans                     &trans          &trans                                                                &kp SLASH
             >;
 
@@ -86,7 +86,7 @@
             bindings = <
 &kp F1          &kp F2                  &kp F3          &kp F4                   &kp F5                                           &kp F6     &kp F7    &kp F8        &kp F9     &kp F10
 &kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END         &trans            &kp SEMICOLON  &kp ASTRK  &kp PLUS  &kp UP_ARROW  &kp MINUS  &kp PERCENT
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &kp A           &kp LG(LS(RIGHT_ARROW))  &kp LG(RS(N3))  &kp LG(LS(N4))    &kp COLON      &kp SLASH  &kp LEFT  &kp DOWN      &kp RIGHT  &trans
+&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &kp A           &kp LG(LS(RIGHT_ARROW))  &kp LG(RS(N3))  &kp LG(LS(N4))    &kp COLON      &kp SLASH  &kp LEFT  &kp DOWN      &kp RIGHT  &kp BACKSLASH
 &trans          &trans                  &trans          &trans                   &trans          &trans            &trans         &trans                                        &trans
             >;
 
