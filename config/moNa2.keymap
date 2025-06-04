@@ -84,10 +84,10 @@
 
         layer_3 {
             bindings = <
-&kp F1          &kp F2                  &kp F3          &kp F4                   &kp F5                                           &kp F6     &kp F7    &kp F8        &kp F9     &kp F10
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END         &trans            &kp SEMICOLON  &kp ASTRK  &kp PLUS  &kp UP_ARROW  &kp MINUS  &kp PERCENT
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &kp A           &kp LG(LS(RIGHT_ARROW))  &kp LG(RS(N3))  &kp LG(LS(N4))    &kp COLON      &kp SLASH  &kp LEFT  &kp DOWN      &kp RIGHT  &kp BACKSLASH
-&trans          &trans                  &trans          &trans                   &trans          &trans            &trans         &trans                                        &trans
+&kp F1            &kp F2                  &kp F3          &kp F4                   &kp F5                                           &kp F6     &kp F7    &kp F8        &kp F9     &kp F10
+&kp LC(LEFT_ALT)  &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END         &trans            &kp SEMICOLON  &kp ASTRK  &kp PLUS  &kp UP_ARROW  &kp MINUS  &kp PERCENT
+&kp LEFT_SHIFT    &kp LG(LS(LEFT_ARROW))  &kp A           &kp LG(LS(RIGHT_ARROW))  &kp LG(RS(N3))  &kp LG(LS(N4))    &kp COLON      &kp SLASH  &kp LEFT  &kp DOWN      &kp RIGHT  &kp BACKSLASH
+&trans            &trans                  &trans          &trans                   &trans          &trans            &trans         &trans                                        &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
